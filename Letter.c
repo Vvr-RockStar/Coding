@@ -2,7 +2,6 @@
 #include <string.h>
 
 struct count {
-	//to count no of words
 	int counter;
 	//to include the letter
 	char letter;
@@ -27,7 +26,7 @@ int main(){
 
 	
 	//upper case
-	for(int i=readLetterUp; i<=90; i++){
+	//for(int i=readLetterUp; i<=90; i++){
 		//add the letter to data
 		cnt[number].counter = 0;
 		printf("number = \n",number);
@@ -38,7 +37,7 @@ int main(){
 			  then increase the letter counter
 			  else just go ahed
 			*/
-			if(inputt[j] == i || inputt[j] == readLetterUp){
+			if(inputt[j] == readLetterUp){
 				cnt[number].counter += 1;
 				number++;
 				printf("LOG: cnt[%d].counter = %d \t cnt[%d].letter = %c\n",number,cnt[number].counter, number,cnt[number].letter);
@@ -47,7 +46,7 @@ int main(){
 					number++;
 			}
 		}
-	}
+	//}
 
 	return 0;
 }
